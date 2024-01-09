@@ -1,6 +1,8 @@
 body {
   font-family: 'Glass Antiqua', cursive;
-  background-image: url('assets/background.jpg'); /* Ajoutez le chemin de votre image de fond */
+  font-weight: bold;
+  font-size: larger;
+  background-image: url('assets/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -28,8 +30,9 @@ header, footer {
 
 .day {
   background-color: #91b788;
+  opacity: 1;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   margin: 10px;
@@ -37,10 +40,19 @@ header, footer {
   z-index: 1;
 }
 
-.day:hover {
-  background-color: #4d7c4a;
-  color: #fff;
+.day-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 70px;
+  transform: translate(-50%, -50%);
+  display: none; /* Masque l'image initialement */
 }
+
+.day:hover .day-image {
+  display: block; /* Fait apparaître l'image au survol */
+}
+
 
 .popup {
   display: none;
@@ -50,7 +62,7 @@ header, footer {
   transform: translate(-50%, -50%);
   background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   z-index: 1;
 }
 
