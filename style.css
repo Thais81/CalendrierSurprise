@@ -4,12 +4,12 @@
   background-repeat: no-repeat;
   margin: 0;
   overflow: hidden;
-  cursor: crosshair;
+  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;;
   }
 
   /* Définir un pointeur différent lorsqu'on survole un élément avec la classe "element-special" */
   .element-special {
-  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto; 
+
   text-align: center;
   position: absolute;
   font-size: 20px;
