@@ -22,6 +22,7 @@ const sources={
     "./assets/avatar/caroline.webp"
   ]}
 
+<<<<<<< HEAD
 document.querySelectorAll("a").target="_blank";
 
 for (let i=0; i<1; i++)
@@ -31,3 +32,26 @@ for (let i=0; i<1; i++)
   const avatar=div.querySelector("img");
   avatar.scr.SetAttribute(src, sources.images[i]);
 }
+=======
+function openPopup(day) {
+    const popup = document.getElementById('popup');
+    const popupContent = document.getElementById('popup-content');
+    const closeBtn = document.getElementById('close-btn');
+  
+    const link = link[0];
+    popupContent.innerHTML = link[0];
+    
+    popup.style.display = 'block';
+  
+    closeBtn.onclick = function() {
+      popup.style.display = 'none';
+    };
+  
+    window.onclick = function(event) {
+      if (event.target === popup) {
+        popup.style.display = 'none';
+      }
+    };
+  }
+  
+>>>>>>> origin/main
