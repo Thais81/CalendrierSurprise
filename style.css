@@ -5,11 +5,7 @@
   background-repeat: no-repeat;
   margin: 0;
   overflow: hidden;
-<<<<<<< HEAD
-  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
-=======
   cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;;
->>>>>>> 0c4dcd0 (avec pointeur lumineux tout le temps)
   }
   /* Définir un pointeur différent lorsqu'on survole un élément avec la classe "element-special" */
   .element-special {
