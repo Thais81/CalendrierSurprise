@@ -1,23 +1,28 @@
-body {
-  font-family: 'Glass Antiqua', cursive;
-  font-weight: bold;
-  font-size: larger;
-  background-image: url('assets/background.jpg');
+:root{
+  background-image: url('assets/background.jpg'); /* Ajoutez le chemin de votre image de fond */
   background-size: cover;
+  font-family: "BuWicked";
   background-repeat: no-repeat;
   margin: 0;
-  padding: 0;
-  color: #031e27;
-}
+  overflow: hidden;
+  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
+  }
+  /* Définir un pointeur différent lorsqu'on survole un élément avec la classe "element-special" */
+  .element-special {
 
-header, footer {
-  background-color: #4d7c4a;
-  padding: 10px;
   text-align: center;
-}
-
-.header h1 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
   margin: 0;
+  }
+
+#MyCover{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
 }
 
 .calendar {
@@ -30,6 +35,9 @@ header, footer {
 
 .day {
   background-color: #91b788;
+  width: 20px;
+  height: 20px;
+  text-align: center;
   opacity: 1;
   padding: 20px;
   border-radius: 50px;
@@ -37,7 +45,8 @@ header, footer {
   transition: background-color 0.3s ease-in-out;
   margin: 10px;
   position: relative;
-  z-index: 1;
+  top: 250px;
+  z-index: auto;
 }
 
 .day-image {
@@ -47,34 +56,34 @@ header, footer {
   border-radius: 70px;
   transform: translate(-50%, -50%);
   display: none; /* Masque l'image initialement */
+  z-index: 1;
 }
 
 .day:hover .day-image {
   display: block; /* Fait apparaître l'image au survol */
 }
 
+@font-face {
+  font-family:"BuWicked";
+  src: url("./assets/typo/BuWicked-2dOW.ttf");
+}
 
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
+h1 {
+  text-align: center;
+  color: #ff9900; /* Couleur du texte en surbrillance */
+
+  color: #fff;
+  text-shadow:  0 0 7px #fff, 
+           0 0 10px #fff, 
+           0 0 32px rgb(252, 172, 1),   
+           0 0 67px rgb(252, 172, 1), 
+           0 0 90px rgb(252, 172, 1); 
+  /*text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);/* Ombre portée pour le texte */
+  position: absolute;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 50px;
-  z-index: 1;
+  font-size: 100px;
+  font-weight: bold;
 }
 
-.popup-content {
-  text-align: center;
-}
-
-.close-btn {
-  cursor: pointer;
-  color: #4d7c4a;
-  font-size: 20px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
