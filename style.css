@@ -25,6 +25,39 @@ object-fit: cover;
 
 }
 
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.day {
+  background-color: #91b788;
+  opacity: 1;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.day-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 70px;
+  transform: translate(-50%, -50%);
+  display: none; /* Masque l'image initialement */
+}
+
+.day:hover .day-image {
+  display: block; /* Fait apparaître l'image au survol */
+}
+
 @font-face {
   font-family:"BuWicked";
   src: url("./assets/typo/BuWicked-2dOW.ttf");
