@@ -18,12 +18,6 @@
   margin: 0;
   }
 
-#MyCover{
-width: 100%;
-height: 100%;
-object-fit: cover;
-
-}
 
 calendar {
   display: flex;
@@ -34,13 +28,12 @@ calendar {
 }
 
 .day {
-  background-color: #91b788;
-  opacity: 1;
+  background-color: transparent;
   padding: 20px;
   border-radius: 50px;
-  cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   margin: 10px;
+  font-family: "BuWicked";
   position: relative;
   z-index: 1;
 }
