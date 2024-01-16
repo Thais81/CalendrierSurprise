@@ -23,8 +23,8 @@ function openPopup(day) {
     const popupContent = document.getElementById('popup-content');
     const closeBtn = document.getElementById('close-btn');
   
-    const link = `<a href="${links[day - 1]}" target="_blank">Clique ici !</a>`;
-    popupContent.innerHTML = link;
+    const link = link[0];
+    popupContent.innerHTML = link[0];
     
     popup.style.display = 'block';
   
