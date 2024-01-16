@@ -1,12 +1,12 @@
 :root{
   background-image: url('assets/background.jpg'); /* Ajoutez le chemin de votre image de fond */
+  background-size: cover;
   font-family: "BuWicked";
   background-repeat: no-repeat;
   margin: 0;
   overflow: hidden;
-  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;;
+  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
   }
-
   /* Définir un pointeur différent lorsqu'on survole un élément avec la classe "element-special" */
   .element-special {
 
@@ -35,6 +35,9 @@ object-fit: cover;
 
 .day {
   background-color: #91b788;
+  width: 20px;
+  height: 20px;
+  text-align: center;
   opacity: 1;
   padding: 20px;
   border-radius: 50px;
@@ -42,7 +45,8 @@ object-fit: cover;
   transition: background-color 0.3s ease-in-out;
   margin: 10px;
   position: relative;
-  z-index: 1;
+  top: 250px;
+  z-index: auto;
 }
 
 .day-image {
@@ -52,6 +56,7 @@ object-fit: cover;
   border-radius: 70px;
   transform: translate(-50%, -50%);
   display: none; /* Masque l'image initialement */
+  z-index: 1;
 }
 
 .day:hover .day-image {
@@ -75,7 +80,7 @@ h1 {
            0 0 90px rgb(252, 172, 1); 
   /*text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);/* Ombre portée pour le texte */
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 100px;
