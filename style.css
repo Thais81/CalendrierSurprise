@@ -23,6 +23,7 @@ body{
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
   transition: background-color 0.3s ease-in-out;
   margin: 20px;
+  font-family: "BuWicked";
   position: absolute;
   top: 250px;
   z-index: auto;
