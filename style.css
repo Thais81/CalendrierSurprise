@@ -14,8 +14,8 @@ body{
 .day {
   background-color: transparent;
   cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   opacity: 1;
   padding: 20px;
   border-radius: 75px;
@@ -31,7 +31,7 @@ body{
   justify-content: center;
   text-align: center;
   font-family: "BuWicked";
-  font-size: 50px;
+  font-size: 20px;
   font-weight: bold ;
   color: #ff9900;
   color: #fff;
@@ -46,7 +46,7 @@ body{
 
 .day-image {
   position: absolute;
-  width: 150px;
+  width: 100px;
   height: auto;
   top: 50%;
   left: 50%;
