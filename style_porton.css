@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "BuWicked";
+    src: url("./assets/typo/BuWicked-2dOW.ttf");
+  }
+
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+:root {
+    
+    cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
+}
+
+body {
+    overflow: hidden;
+}
+
+#background-container {
+    cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/img/background.jpg');
+    /* Ajoutez le chemin correct de votre image de fond */
+    background-size: cover;
+    z-index: -1;
+    /*attention estion de z-index difficulté pr la destion du <a> avec le porton */
+}
+
+
+.cover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1000px;
+    position: relative;
+    /*cursor: url(./assets/img/cle.png), auto;*/
+}
+
+#porton {
+    /*cursor: url(./assets/img/cle.png), auto;*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 8s ease-in-out;
+    /* Transition pour effet d'ouverture, ça ralentit l'ouverture */
+    z-index: 1;
+}
+
+/*classe pout l'ouverture du porton*/
+.ouverture-porton {
+    transform: rotateY(-60deg);
+}
+
+#entry {
+    background-image: url('./assets/img/background.jpg');
+    cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
+    font-family: "BuWicked";
+    font-size: 28px;
+    opacity: 1;
+    padding: 50px;
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+    border: 0.5px solid black; /* Utilisez 'border' pour définir une bordure */
+    border-radius: 50%;
+    color: #ff9900;
+    color: #fff;
+    text-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 32px rgb(252, 172, 1),
+        0 0 67px rgb(252, 172, 1),
+        0 0 90px rgb(252, 172, 1);
+    position: absolute;
+    z-index: 2; /* Assurez-vous que le bouton est au-dessus du fond d'écran */
+}
+
+#entry a {
+    
+    cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
+    font-family: "BuWicked";
+    align-items: center;
+    color: inherit; /* Assurez-vous que la couleur du lien est héritée du bouton */
+    text-decoration: none; /* Supprimez le soulignement du lien par défaut */
+    display: block; /* Assurez-vous que le lien occupe toute la zone du bouton */
+    padding: 10px;
+    margin: 10px;
+    height: 100%; /* Assurez-vous que le lien occupe toute la hauteur du bouton */
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
