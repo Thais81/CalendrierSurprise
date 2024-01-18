@@ -73,8 +73,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+/* ************FONCTION ClickSon******************** */
 
-*************FONCTION POUR OUVRIR PORTON **************/
+function sonClick() {
+    document.querySelector("audio").play()
+}
+
+/* *************FONCTION POUR OUVRIR PORTON ***************/
 document.addEventListener("DOMContentLoaded", function() {
 // Référence à l'élément porton
 const porton = document.getElementById("porton");
