@@ -1,3 +1,9 @@
+function SonAmbiance() {
+
+  const son = this.title;
+document.getElementById("SonMedieval").play();
+}
+
 const links = [
   "https://www.linkedin.com/in/mohamad-almustafa-3502a469/",
   "https://www.linkedin.com/in/caroline-berg%C3%A9-396646109/",
