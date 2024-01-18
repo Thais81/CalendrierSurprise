@@ -1,89 +1,89 @@
-:root{
-  background-image: url('assets/background.jpg'); /* Ajoutez le chemin de votre image de fond */
+body{
+  background-image: url('assets/background.jpg');
   background-size: cover;
   font-family: "BuWicked";
   background-repeat: no-repeat;
+  width: 100%;
   margin: 0;
   overflow: hidden;
-  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;;
-  }
-  /* Définir un pointeur différent lorsqu'on survole un élément avec la classe "element-special" */
-  .element-special {
+ }
 
-  text-align: center;
-  position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  }
-
-#MyCover{
-width: 100%;
-height: 100%;
-object-fit: cover;
-
+:root {
+  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
 }
-
-.calendar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 600px;
-  margin: 20px auto;
-}
-
 .day {
-  background-color: #91b788;
-  width: 20px;
-  height: 20px;
-  text-align: center;
+  background-color: transparent;
+  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
+  width: 150px;
+  height: 150px;
   opacity: 1;
   padding: 20px;
-  border-radius: 50px;
-  cursor: pointer;
+  border-radius: 75px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
   transition: background-color 0.3s ease-in-out;
-  margin: 10px;
-  position: relative;
+  margin: 20px;
+  position: absolute;
   top: 250px;
   z-index: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "BuWicked";
+  font-size: 50px;
+  font-weight: bold ;
+  color: #ff9900;
+  color: #fff;
+  text-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 32px rgb(252, 172, 1),
+    0 0 67px rgb(252, 172, 1),
+    0 0 90px rgb(252, 172, 1);
+
 }
+
 
 .day-image {
   position: absolute;
+  width: 150px;
+  height: auto;
   top: 50%;
   left: 50%;
-  border-radius: 70px;
+  border-radius: 75px;
   transform: translate(-50%, -50%);
-  display: none; /* Masque l'image initialement */
+  display: none;
+  /* Masque l'image initialement */
   z-index: 1;
 }
 
 .day:hover .day-image {
-  display: block; /* Fait apparaître l'image au survol */
+  cursor: url("./assets/img/GlowSuminoze/Yellow/cursor.png"), auto;
+  display: block;
+  /* Fait apparaître l'image au survol */
 }
 
 @font-face {
-  font-family:"BuWicked";
+  font-family: "BuWicked";
   src: url("./assets/typo/BuWicked-2dOW.ttf");
 }
 
 h1 {
   text-align: center;
-  color: #ff9900; /* Couleur du texte en surbrillance */
+  color: #ff9900;
+  /* Couleur du texte en surbrillance */
 
   color: #fff;
-  text-shadow:  0 0 7px #fff, 
-           0 0 10px #fff, 
-           0 0 32px rgb(252, 172, 1),   
-           0 0 67px rgb(252, 172, 1), 
-           0 0 90px rgb(252, 172, 1); 
+  text-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 32px rgb(252, 172, 1),
+    0 0 67px rgb(252, 172, 1),
+    0 0 90px rgb(252, 172, 1);
   /*text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);/* Ombre portée pour le texte */
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 100px;
+  font-size: 90px;
   font-weight: bold;
 }
-
