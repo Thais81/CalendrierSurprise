@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".day");
     const h1Element = document.querySelector("h1");
 
+
 /* utilisation la methode forEach pr reiterer tous les boutons (liste de node dans le DOM)
      envoyé dal queryselectorAll (".day")*/
     buttons.forEach(function (button) {
@@ -75,7 +76,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* ************FONCTION ClickSon******************** */
 
-function sonClick() {
-    document.querySelector("audio").play()
-}
-
+function sonClick(audio) {
+    // Récupérer l'élément audio:
+    var audioElement = document.getElementsByTagName(audio);
+  
+    // Déclencher la lecture du fichier audio:
+    audioElement.play();
+  }
+  // utilisation de la methode forEach
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function() {
+    sonClick(button);
+})});
